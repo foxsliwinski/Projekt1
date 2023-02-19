@@ -1,23 +1,71 @@
-﻿// zadanie domowe dzień 4
-using System.Text.Json.Serialization;
-using static System.Net.Mime.MediaTypeNames;
+﻿int number = 4566199;
+string numberInString = number.ToString();
+char[] letters= numberInString.ToCharArray();
 
-string name = "ewa";
-bool female = false;
-var age = 33;
+int counter0 = 0;
+int counter1 = 0;
+int counter2 = 0;
+int counter3 = 0;
+int counter4 = 0;
+int counter5 = 0;
+int counter6 = 0;
+int counter7 = 0;
+int counter8 = 0;
+int counter9 = 0;
 
-if (female && age < 30)
+foreach (char letter in letters)
+
 {
-    Console.WriteLine("kobieta poniżej 30 lat");
+    if (letter == '0')
+    {
+        counter0++;
+    }
+    else if (letter == '1')
+    {
+        counter1++;
+    }
+    else if (letter == '2')
+    {
+        counter2++;
+    }
+    else if (letter == '3')
+    {
+        counter3++;
+    }
+    else if (letter == '4')
+    {
+        counter4++;
+    }
+    else if (letter =='5')
+    {
+        counter5++;
+    }
+    else if (letter == '6')
+    {
+        counter6++;
+    }
+    else if (letter =='7')
+    {
+        counter7++;
+    }
+    else if (letter == '8')
+    {
+        counter8++;
+    }
+    else if (letter == '9')
+    {
+        counter9++;
+    }
 }
 
-else if (age == 33 && name == "ewa")
-{
-    Console.WriteLine("ewa, lat 33");
-}
-
-else if (!female && age < 18)
-{
-    Console.WriteLine("niepełnoletni mężczyzna");
-
-}
+Console.WriteLine(number);
+Console.WriteLine("liczba 0 " + "wystąpiła " + counter0 + "razy");
+Console.WriteLine("liczba 1 " + "wystąpiła " + counter1 + "razy");
+Console.WriteLine("liczba 2 " + "wystąpiła " + counter2 + "razy");
+Console.WriteLine("liczba 3 " + "wystąpiła " + counter3 + "razy");
+Console.WriteLine("liczba 4 " + "wystąpiła " + counter4 + "razy");
+Console.WriteLine("liczba 5 " + "wystąpiła " + counter5 + "razy");
+Console.WriteLine("liczba 6 " + "wystąpiła " + counter6 + "razy");
+Console.WriteLine("liczba 7 " + "wystąpiła " + counter7 + "razy");
+Console.WriteLine("liczba 8 " + "wystąpiła " + counter8 + "razy");
+Console.WriteLine("liczba 9 " + "wystąpiła " + counter9 + "razy");
